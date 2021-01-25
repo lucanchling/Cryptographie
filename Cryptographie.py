@@ -35,3 +35,20 @@ def affCryptoDecCplx(phrase):
     print("Décryptée : "+ decrypt)
 
 #affCryptoDecCplx("Salut je suis Luc")
+
+################################
+# Cryptage par Code de César : #
+################################
+
+from cesarCode import cryptoCesar
+
+def affCryptoCesar(phrase,key):
+    print("Cryptage par Code César : ")
+    print("Phrase : " + phrase)
+    crypt = cryptoCesar.Crypt(cryptoCesar(phrase,key))
+    print("Encryptée : "+crypt)
+    decrypt = cryptoCesar.Decrypt(cryptoCesar(crypt,key))
+    print("Décryptée : "+ decrypt)
+
+affCryptoCesar("Salut je suis Luc",5)
+
