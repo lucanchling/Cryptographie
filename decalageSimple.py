@@ -4,7 +4,7 @@
 # Date de création : 25/01/2021
 # To do : Nothing
 
-class cryptoDecalage :
+class cryptoDecalageSimple :
 
     def __init__(self,phrase,dec):
         self.dec = dec

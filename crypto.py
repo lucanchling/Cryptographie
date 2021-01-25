@@ -7,13 +7,13 @@
 
 # Cryptage par décalage :
 
-from decalage import cryptoDecalage
+from decalageSimple import cryptoDecalageSimple
 
 def affCryptoDec(phrase,decalage):
     print("Phrase : " + phrase)
-    crypt = cryptoDecalage.decaCrypt(cryptoDecalage(phrase,decalage))
+    crypt = cryptoDecalageSimple.decaCrypt(cryptoDecalageSimple(phrase,decalage))
     print("Encryptée : "+crypt)
-    decrypt = cryptoDecalage.decaDecrypt(cryptoDecalage(crypt,decalage))
+    decrypt = cryptoDecalageSimple.decaDecrypt(cryptoDecalageSimple(crypt,decalage))
     print("Décryptée : "+ decrypt)
 
 #affCryptoDec("Salut je suis Luc",5)
