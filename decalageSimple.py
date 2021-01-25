@@ -10,17 +10,15 @@ class cryptoDecalageSimple :
         self.dec = dec
         self.phrase = phrase
 
-    def __str__(self):
-        return str(self.phrase)
     # Encryptage par décalage :
-    def decaCrypt(self):
+    def Crypt(self):
         code = [ord(i)+self.dec for i in self.phrase]
         crypt = ""
         for i in code:
             crypt += chr(i)
         return crypt
     # Décryptage pa décalage :
-    def decaDecrypt(self):
+    def Decrypt(self):
         code = [ord(i)-self.dec for i in self.phrase]
         decrypt = ""
         for i in code:
