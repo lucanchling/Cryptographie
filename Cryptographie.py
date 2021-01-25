@@ -2,7 +2,7 @@
 # Cryptage de str
 # Créateur : Luc Anchling
 # Date de création : 24/01/2021
-# To do :
+# To do : Vigenère
 
 ###########################
 # Cryptage par décalage : #
@@ -68,3 +68,19 @@ def affCryptoPolybe(phrase):
 
 #affCryptoPolybe("salut je suis luc")
 
+
+#########################################
+# Cryptage par l'approche de Vigenère : #
+#########################################
+
+from Vigenere import cryptoVigenere
+
+def affCryptoVigenere(phrase,key):
+    print("Cryptage par Code César : ")
+    print("Phrase : " + phrase)
+    crypt = cryptoVigenere.Crypt(cryptoVigenere(phrase,key))
+    print("Encryptée : "+crypt)
+    decrypt = cryptoVigenere.Decrypt(cryptoVigenere(crypt,key))
+    print("Décryptée : "+ decrypt)
+
+#affCryptoVigenere("Salut moi c'est luc","bonjour")
