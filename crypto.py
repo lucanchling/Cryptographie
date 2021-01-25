@@ -1,20 +1,20 @@
+# Header :
+# Cryptage de str
+# Créateur : Luc Anchling
+# Date de création : 24/01/2021
+# To do :
 
 
+# Cryptage par décalage :
 
-class crypto :
-    def __init__(self,phrase):
-        self.phrase = phrase
+from decalage import cryptoDecalage
 
-    def __str__(self):
-        return str(self)
-    
-    def decalage(self,phrase):
-        dec = 5
-        code = []
-        for i in phrase:
-            code.append(ord(i))
-        return code
+def affCryptoDec(phrase,decalage):
+    print("Phrase : " + phrase)
+    crypt = cryptoDecalage.decaCrypt(cryptoDecalage(phrase,decalage))
+    print("Encryptée : "+crypt)
+    decrypt = cryptoDecalage.decaDecrypt(cryptoDecalage(crypt,decalage))
+    print("Décryptée : "+ decrypt)
 
-crypto.decalage("SAlut")
-
+#affCryptoDec("Salut je suis Luc",5)
 
