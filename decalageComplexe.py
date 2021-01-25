@@ -13,9 +13,9 @@ class cryptoDecalageComplexe:
 
     # Encryptage par décalage Complexe :
     def Crypt(self):
-        global decalage
-        decalage = [randint(0,50) for i in range(len(self.phrase))]
-        code = [ord(self.phrase[i])+decalage[i] for i in range(len(self.phrase))]
+        global key
+        key = [randint(0,50) for i in range(len(self.phrase))]
+        code = [ord(self.phrase[i])+key[i] for i in range(len(self.phrase))]
         crypt = ""
         for i in code:
             crypt += chr(i)
@@ -23,7 +23,7 @@ class cryptoDecalageComplexe:
     
     # Decryptage par decalage Complexe :
     def Decrypt(self):
-        code = [ord(self.phrase[i])-decalage[i] for i in range(len(self.phrase))]
+        code = [ord(self.phrase[i])-key[i] for i in range(len(self.phrase))]
         decrypt = ""
         for i in code:
             decrypt += chr(i)
