@@ -50,5 +50,21 @@ def affCryptoCesar(phrase,key):
     decrypt = cryptoCesar.Decrypt(cryptoCesar(crypt,key))
     print("Décryptée : "+ decrypt)
 
-affCryptoCesar("Salut je suis Luc",5)
+#affCryptoCesar("Salut je suis Luc",5)
+
+################################################
+# Cryptage par l'approche du carré de Polybe : #
+################################################
+
+from carrePolybe import cryptoPolybe
+
+def affCryptoPolybe(phrase):
+    print("Cryptage par Code César : ")
+    print("Phrase : " + phrase)
+    crypt = cryptoPolybe.Crypt(cryptoPolybe(phrase))
+    print("Encryptée : "+crypt)
+    decrypt = cryptoPolybe.Decrypt(cryptoPolybe(crypt))
+    print("Décryptée : "+ decrypt)
+
+#affCryptoPolybe("salut je suis luc")
 
