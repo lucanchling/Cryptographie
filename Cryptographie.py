@@ -8,7 +8,7 @@
 # Cryptage par décalage : #
 ###########################
 
-from decalageSimple import cryptoDecalageSimple
+from TypeOfCrypto.decalageSimple import cryptoDecalageSimple
 
 def affCryptoDec(phrase,decalage):
     print("Cryptage par Décalage Simple : ")
@@ -24,7 +24,7 @@ def affCryptoDec(phrase,decalage):
 # Cryptage par décalage Complexe (aléatoire) : #
 ################################################
 
-from decalageComplexe import cryptoDecalageComplexe
+from TypeOfCrypto.decalageComplexe import cryptoDecalageComplexe
 
 def affCryptoDecCplx(phrase):
     print("Cryptage par Décalage Complexe : ")
@@ -40,7 +40,7 @@ def affCryptoDecCplx(phrase):
 # Cryptage par Code de César : #
 ################################
 
-from cesarCode import cryptoCesar
+from TypeOfCrypto.cesarCode import cryptoCesar
 
 def affCryptoCesar(phrase,key):
     print("Cryptage par Code César : ")
@@ -56,7 +56,7 @@ def affCryptoCesar(phrase,key):
 # Cryptage par l'approche du carré de Polybe : #
 ################################################
 
-from carrePolybe import cryptoPolybe
+from TypeOfCrypto.carrePolybe import cryptoPolybe
 
 def affCryptoPolybe(phrase):
     print("Cryptage par Code César : ")
@@ -73,7 +73,7 @@ def affCryptoPolybe(phrase):
 # Cryptage par l'approche de Vigenère : #
 #########################################
 
-from Vigenere import cryptoVigenere
+from TypeOfCrypto.Vigenere import cryptoVigenere
 
 def affCryptoVigenere(phrase,key):
     print("Cryptage par Code César : ")
