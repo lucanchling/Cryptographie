@@ -2,7 +2,7 @@
 # Cryptage de str
 # Créateur : Luc Anchling
 # Date de création : 24/01/2021
-# To do : Vigenère
+# To do : 
 
 ###########################
 # Cryptage par décalage : #
