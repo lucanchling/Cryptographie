@@ -4,7 +4,7 @@
 # Date de création : 26/01/2021
 # To do : Faire toute la partie grapique
 
-from tkinter import Tk, Canvas, Label, Entry, Menu, Button, Listbox, END
+from tkinter import Tk, Canvas, Label, Entry, Menu, Button, OptionMenu
 
 # Partie Graphique :
 
@@ -20,10 +20,8 @@ cryptoType.pack(side='top')
 
 # Selection du type de cryptage :
 typeOfCrypto = ["Décalage Simple", "Décalage Complexe", "Code de César", "Carrée de Polybe", "Vigenère"]
-selec = Listbox(cnv,height = 5)
+selec = OptionMenu(cnv,typeOfCrypto,"Décalage Simple", "Décalage Complexe", "Code de César", "Carrée de Polybe", "Vigenère")
 selec.pack(side='top')
-for element in typeOfCrypto:
-    selec.insert(END, element)
 
 drt = Label(cnv,text='Texte à Encrypté :')
 drt.pack(side='left')
